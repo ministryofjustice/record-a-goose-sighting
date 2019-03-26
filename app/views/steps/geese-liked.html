@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Do you like geese?
+    </h1>
+
+    <form class="form" action="/steps/goose-type" method="post">
+    
+      {{ govukRadios({
+        classes: "govuk-radios--inline",
+        idPrefix: "geese-liked",
+        name: "geese-liked",
+        fieldset: {
+          legend: {
+            text: "",
+            isPageHeading: false,
+            classes: "govuk-fieldset__legend--xl"
+          }
+        },
+        hint: {
+          text: "Select yes if you like geese"
+        },
+        items: [
+          {
+            value: "yes",
+            text: "Yes"
+          },
+          {
+            value: "no",
+            text: "No"
+          }
+        ]
+      }) }}
+    
+      <button class="govuk-button" tabindex="-1">Continue</button>
+    
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% from "radios/macro.njk" import govukRadios %}

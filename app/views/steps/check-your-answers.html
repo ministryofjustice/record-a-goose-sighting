@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+    
+    <h2 class="govuk-heading-m">Geese details</h2>
+    
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          You like geese
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['geese-liked'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/geese-liked">
+            Change
+            <span class="govuk-visually-hidden"> biscuits</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Favourite Goose
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['goose-type'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/goose-type">
+            Change
+            <span class="govuk-visually-hidden"> cake</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date you saw the goose
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['date-saw-goose-day'] }} / {{ data['date-saw-goose-month'] }} / {{ data['date-saw-goose-year'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/date-saw-goose">
+            Change
+            <span class="govuk-visually-hidden"> donuts</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+    
+
+    <h2 class="govuk-heading-m">Now send your application</h2>
+    
+    <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing
+      are correct.</p>
+    
+    <form class="form" action="/steps/end" method="post">
+    
+      <button class="govuk-button">Continue</button>
+    
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <form class="form" action="/steps/check-your-answers" method="post">
+    
+      {% from "date-input/macro.njk" import govukDateInput %}
+
+      {{ govukDateInput({
+        id: "date-saw-goose",
+        namePrefix: "date-saw-goose",
+        fieldset: {
+          legend: {
+            text: "When did you see the goose?",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--xl"
+          }
+        }, 
+        hint: {
+          text: "For example, 12 11 2017"
+        }
+      }) }}
+        
+      <button class="govuk-button">Continue</button>
+    
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Boop
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      What type of goose was the goose you saw?
+    </h1>
+    
+    <form class="form" action="/steps/date-saw-goose" method="post">
+    
+      {% from "input/macro.njk" import govukInput %}
+
+      {{ govukInput({
+        label: {
+          text: "Tell us what type of goose it was"
+        },
+        id: "goose-type",
+        name: "goose-type"
+      }) }}
+              
+      <button class="govuk-button" id="main-content">Continue</button>
+    
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
