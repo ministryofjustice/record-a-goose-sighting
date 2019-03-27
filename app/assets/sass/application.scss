@@ -13,3 +13,12 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+a:focus {
+  background-color: white;
+  outline: 2px solid lightgray;
+}
+
+.govuk-panel--confirmation {
+  border: none;
+}

@@ -11,7 +11,7 @@ GOV.UK Prototype Kit
     
     <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
     
-    <h2 class="govuk-heading-m">Geese details</h2>
+    <h2 class="govuk-heading-m">Goose details</h2>
     
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
       <div class="govuk-summary-list__row">
@@ -63,6 +63,19 @@ GOV.UK Prototype Kit
     
     <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing
       are correct.</p>
+
+      {% from "details/macro.njk" import govukDetails %}
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What happens with my data?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+           Nothing - this doesn't actually do or collect anything. You'll have to store your own goose records unfortunately.
+        </div>
+      </details>
     
     <form class="form" action="/steps/end" method="post">
     
