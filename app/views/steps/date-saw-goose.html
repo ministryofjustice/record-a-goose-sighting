@@ -10,7 +10,7 @@
     
     <form class="form" action="/steps/check-your-answers" method="post">
     
-      {% from "date-input/macro.njk" import govukDateInput %}
+      {% from "govuk/components/date-input/macro.njk" import govukDateInput %}
 
       {{ govukDateInput({
         id: "date-saw-goose",

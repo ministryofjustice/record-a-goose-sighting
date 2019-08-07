@@ -30,7 +30,7 @@ GOV.UK Prototype Kit
       </div>
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Favourite Goose
+          Favourite goose type
         </dt>
         <dd class="govuk-summary-list__value">
           {{ data['goose-type'] }}
@@ -64,7 +64,7 @@ GOV.UK Prototype Kit
     <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing
       are correct.</p>
 
-      {% from "details/macro.njk" import govukDetails %}
+      {% from "govuk/components/details/macro.njk" import govukDetails %}
 
       <details class="govuk-details">
         <summary class="govuk-details__summary">

@@ -9,14 +9,14 @@ Boop
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">
-      What type of goose was the goose you saw?
+      What type of goose did you see?
     </h1>
     
     <form class="form" action="/steps/date-saw-goose" method="post">
       <p style="color: transparent;">Ghost goose</p>
       <p class="govuk-visually-hidden" tabindex="0">Hidden focusable goose</p>
     
-      {% from "input/macro.njk" import govukInput %}
+      {% from "govuk/components/input/macro.njk" import govukInput %}
 
       {{ govukInput({
         label: {
