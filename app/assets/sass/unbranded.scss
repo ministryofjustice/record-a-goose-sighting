@@ -11,3 +11,11 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 // If you need to create a page as part of your journey, but without GOV.UK branding
 // See localhost:3000/docs/examples/blank-unbranded
+
+.app-banner--warning {
+  background: red;
+  padding: 24px;
+  p {
+    color: white;
+  }
+}
