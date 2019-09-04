@@ -43,6 +43,9 @@ There is some hidden text on the page, that is tab focusable. Whilst this isn't 
 - Transparent text that appears in dark mode
 Sometimes, you want to deviate from a pattern, and want a quick way of fixing something. In this instance, an attempt was made to hide the text 'ghost goose' - but because `color: transparent` was used instead of the 'govuk-visually-hidden' class, it isn't properly hidden, and leaks out in dark mode. The proper fix would be using this class.
 
+- Placeholder text
+Placeholder text disappears when you start to type. This can be confusing, and if you struggle to remember things, you might then need to delete what you've typed in to remind yourself of what was there, in case it was important. It's best to include information like hints outside of the form field, where it can be seen at all times.
+
 
 ## When did you see the goose
 - No issues on this page! Sometimes, when you've found issues on other pages, you expect every page to have issues, and you spend a long time looking. However sometimes, some pages don't have issues, and if the basic tests pass, the best use of time is to move on.

@@ -15,16 +15,13 @@ Boop - Record a goose sighting
     <form class="form" action="/steps/date-saw-goose" method="post">
       <p style="color: transparent;">Ghost goose</p>
       <p class="govuk-visually-hidden" tabindex="0">Hidden focusable goose</p>
-    
-      {% from "govuk/components/input/macro.njk" import govukInput %}
 
-      {{ govukInput({
-        label: {
-          text: "Tell us what type of goose it was"
-        },
-        id: "goose-type",
-        name: "goose-type"
-      }) }}
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="goose-type">
+          Tell us what type of goose it was
+        </label>
+        <input class="govuk-input" placeholder="Black spur-winged goose" id="goose-type" name="goose-type" type="text">
+      </div>
               
       <button class="govuk-button" id="main-content">Continue</button>
     
