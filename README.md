@@ -1,10 +1,12 @@
 # Recording a goose sighting
-This website is primarily a training tool, to help people get into the basics of accessibility testing.
+This is a fictional service, to help you record any sightings of geese (geese are awesome). It's using the [GOV.UK Design system](https://design-system.service.gov.uk/), which are WCAG 2.1 AA compliant, and benefits from hundreds of hours of work and testing. However, even if you're using a Design System, stuff can still go wrong...
+
+There are places where the Design System is misused, misimplemented or misunderstood. These issues range across code, design and content - because accessibility issues can be introduced by all of these disciplines. As such, anyone is welcome to have a go and use this as an exercise!
 
 ## How to use this
-I've filled it with around 15 accessibility issues, and the task is to find as many as you can in ~20 minutes.
+The task is to find as many of the accessibility issues in this site as you can in ~20 minutes.
 
-There is a worksheet, and there is also a list of answers - but give it the full 20 minutes before you look at the answers first, if you're working through this alone!
+There is a [worksheet](/worksheet.md), and there is also a list of [answers](answers.md) - but give it the full 20 minutes before you look at the answers first, if you're working through this alone!
 
 ## What testing tools to use
 I would recommend working through the site in the following order:
@@ -14,16 +16,15 @@ I would recommend working through the site in the following order:
 - Does the colour contrast tab on WAVE throw up any errors?
 - If you run the Dark Mode browser extension, can you see any issues with the site?
 
-Government Digital Services have recently published how to conduct a basic accessibility audit, which is worth a look at too.
+Government Digital Services have recently published [how to conduct a basic accessibility audit](https://www.gov.uk/government/publications/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one), which is worth a look at too.
 
-Testing like this is a good way to identify basic accessibility issues. It would not replace an audit against WCAG 2.1 to level AA, and its ~50 criteria. Identifying the basic issues sooner rather than later will help you out though, as it's easier to fix accessibility issues at the start, rather than the end.
-
+Testing like this is a good way to identify basic accessibility issues. It would not replace an audit against WCAG 2.1 to level AA, and its ~50 criteria. Why still do it? These are tests that are quick to run, and it's easier to fix accessibility issues at the start, rather than the end.
 
 ## How to run locally
-This is built using the GOV.UK prototyping kit. 
+This is built using the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com/docs). 
 
 To run it locally, clone it down, run `npm install` and then `npm start`. It'll then tell you a port to go to in the browser.
 
 ## Suggesting changes
-Feedback is welcome. Either submit an issue, or leave a PR.
+Feedback is welcome. Either [submit an issue](https://github.com/ministryofjustice/recording-a-goose-sighting/issues), or [leave a PR](https://github.com/ministryofjustice/recording-a-goose-sighting/pulls).
 
