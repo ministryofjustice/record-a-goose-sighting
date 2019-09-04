@@ -66,16 +66,10 @@ Check your answers - Record a goose sighting
 
       {% from "govuk/components/details/macro.njk" import govukDetails %}
 
-      <details class="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            What happens with my data?
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-           Nothing - this doesn't actually do or collect anything. You'll have to store your own goose records unfortunately.
-        </div>
-      </details>
+      {{ govukDetails({
+        summaryText: "What happens with my data?",
+        text: "Nothing - this doesn't actually do or collect anything. You'll have to store your own goose records unfortunately."
+      }) }}
     
     <form class="form" action="/steps/end" method="post">
     
