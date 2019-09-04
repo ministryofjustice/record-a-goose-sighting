@@ -57,6 +57,9 @@ Placeholder text disappears when you start to type. This can be confusing, and i
 - Change link - hidden text is incorrect
 We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here, so that a sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put, instead of proper text. 
 
+- Incorrect heading level hierarchy
+The heading hierarchy is currently h1 > h3. The 'goose details' heading should be a h2, as it is a direct descendant of the h1. This is an issue because screen reader users can pull all of the headings out into one summary list, as a quick way of skim reading through what is on the page. If the ordering is incorrect like this, it can be hard to interpret in when viewed in this way.
+
 ## End date
 - Use of capital letters
 Text that is in all capital letters loses it's shape. This can make it harder for some people with dyslexia to read. Unless absolutey necessary (like it is in a reference number), it's best to avoid using all caps.
