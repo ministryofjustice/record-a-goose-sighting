@@ -6,16 +6,21 @@ URL: https://recording-a-goose-sighting.herokuapp.com/
 ## Start page
 
 
+
 ## Do you like geese page
+
 
 
 ## What type of goose did you see
 
 
+
 ## When did you see the goose
 
 
+
 ## Check your answers
+
 
 
 ## End page
