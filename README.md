@@ -1,7 +1,7 @@
 # Recording a goose sighting
 This is a fictional service, to help you record any sightings of geese (geese are awesome). It's using the [GOV.UK Design system](https://design-system.service.gov.uk/), which are WCAG 2.1 AA compliant, and benefits from hundreds of hours of work and testing. However, even if you're using a Design System, stuff can still go wrong...
 
-There are places where the Design System is misused, misimplemented or misunderstood. These issues range across code, design and content - because accessibility issues can be introduced by all of these disciplines. As such, anyone is welcome to have a go and use this as an exercise!
+There are places where the Design System is misused, misimplemented or misunderstood. This has caused accessibility issues, which range across code, design and content - because accessibility issues can be introduced by all of these disciplines. As such, anyone is welcome to have a go and use this as an exercise!
 
 ## How to use this
 The task is to find as many of the accessibility issues in this site as you can in ~20 minutes.
@@ -28,3 +28,10 @@ To run it locally, clone it down, run `npm install` and then `npm start`. It'll 
 ## Suggesting changes
 Feedback is welcome. Either [submit an issue](https://github.com/ministryofjustice/recording-a-goose-sighting/issues), or [leave a PR](https://github.com/ministryofjustice/recording-a-goose-sighting/pulls).
 
+## Resources for further learning
+- [Udacity Accessibility course](https://www.udacity.com/course/web-accessibility--ud891) - good for futhering knowledge about writing accessible code
+- [GDS WCAG 2.1 Primer](https://alphagov.github.io/wcag-primer/) - good for helping you understand the Web Content Accessibility Guidelines
+- [GDS guidance how to conduct a basic accessibility audit](https://www.gov.uk/government/publications/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one/doing-a-basic-accessibility-check-if-you-cant-do-a-detailed-one) - mentioned above but listed here as well
+- [a11y weekly](https://a11yweekly.com/) - a good weekly newsletter about accessibility
+
+Any other suggestions, free free to add them!

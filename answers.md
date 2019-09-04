@@ -62,4 +62,4 @@ This gif shows a happy goose celebrating knowledge about geese being shared with
 When unaltered, the big box at the top has a colour behind it, that gives it visual prominence on the page. If we turn on our dark mode plugin, it loses this. This is because it's been tampered with a little - if you go to this Summary pattern page in the Design System with the dark mode plugin turned on, you'll see a border appears around it. This is because of a transparent border around it. This was used incorrectly earlier, to try to hide the 'ghost goose', but used to positive effect here. Just one example of the many ways in which the Design System is awesome!
 
 
-Found any other issues? Submit an issue about it, or create a PR to either fix it or add it to this answers list.
+Found any other issues? [Submit an issue](https://github.com/ministryofjustice/recording-a-goose-sighting/issues), or [create a PR](https://github.com/ministryofjustice/recording-a-goose-sighting/pulls). to either fix it or add it to this answers list.
