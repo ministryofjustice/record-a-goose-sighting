@@ -33,6 +33,9 @@ This is an issue because it means that the question won't be read out by screen 
 - Continue button isn’t keyboard focusable
 You can still get past this page by pressing enter when on the radio buttons, but a user might not know this. They might (understandably) expect that the only way to progress is by submitting enter, and so feel trapped and abandon the service at this point. The fix would be removing the `tabindex="-1"`.
 
+- Insufficient colour contrast of the form hint
+The colour contrast is way too low for the form hint text. In the design system, it's a darker grey, which does have a sufficient colour contrast ratio. Respecting the out-of-the-box colours and not overriding them here would fix this issue.
+
 ## What type of goose did you see
 - Wrong page title
 Some screen readers (like JAWS) read the page title out when a page loads. On this page, the page title is 'boop', which tells the screen reader user nothing about what's on the page. A better format would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'What type of goose did you see - Recording a goose sighting - GOV.UK', if this were a real service on GOV.UK.
