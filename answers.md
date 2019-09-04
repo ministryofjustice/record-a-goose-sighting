@@ -33,6 +33,9 @@ This is an issue because it means that the question won't be read out by screen 
 - Continue button isn’t keyboard focusable
 You can still get past this page by pressing enter when on the radio buttons, but a user might not know this. They might (understandably) expect that the only way to progress is by submitting enter, and so feel trapped and abandon the service at this point. The fix would be removing the `tabindex="-1"`.
 
+- Insufficient colour contrast of the form hint
+The colour contrast is way too low for the form hint text. In the design system, it's a darker grey, which does have a sufficient colour contrast ratio. Respecting the out-of-the-box colours and not overriding them here would fix this issue.
+
 ## What type of goose did you see
 - Wrong page title
 Some screen readers (like JAWS) read the page title out when a page loads. On this page, the page title is 'boop', which tells the screen reader user nothing about what's on the page. A better format would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'What type of goose did you see - Recording a goose sighting - GOV.UK', if this were a real service on GOV.UK.
@@ -43,6 +46,9 @@ There is some hidden text on the page, that is tab focusable. Whilst this isn't 
 - Transparent text that appears in dark mode
 Sometimes, you want to deviate from a pattern, and want a quick way of fixing something. In this instance, an attempt was made to hide the text 'ghost goose' - but because `color: transparent` was used instead of the 'govuk-visually-hidden' class, it isn't properly hidden, and leaks out in dark mode. The proper fix would be using this class.
 
+- Placeholder text
+Placeholder text disappears when you start to type. This can be confusing, and if you struggle to remember things, you might then need to delete what you've typed in to remind yourself of what was there, in case it was important. It's best to include information like hints outside of the form field, where it can be seen at all times.
+
 
 ## When did you see the goose
 - No issues on this page! Sometimes, when you've found issues on other pages, you expect every page to have issues, and you spend a long time looking. However sometimes, some pages don't have issues, and if the basic tests pass, the best use of time is to move on.
@@ -50,6 +56,12 @@ Sometimes, you want to deviate from a pattern, and want a quick way of fixing so
 ## Check your answers
 - Change link - hidden text is incorrect
 We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here, so that a sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put, instead of proper text. 
+
+- Incorrect heading level hierarchy
+The heading hierarchy is currently h1 > h3. The 'goose details' heading should be a h2, as it is a direct descendant of the h1. This is an issue because screen reader users can pull all of the headings out into one summary list, as a quick way of skim reading through what is on the page. If the ordering is incorrect like this, it can be hard to interpret in when viewed in this way.
+
+- Justified text
+Justified text forces words and letters to space out a little more than they normally would, which in turn distorts the overal sentence shape a little. Some people with dyslexia rely on this shape, and so justifying and centering content like this can make it harder to read. The fix would be removing the styling that makes it justify, and allowing it to flow normally.
 
 ## End date
 - Use of capital letters
