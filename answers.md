@@ -60,6 +60,9 @@ We talked earlier about links needing to make sense out of context. In this comp
 - Incorrect heading level hierarchy
 The heading hierarchy is currently h1 > h3. The 'goose details' heading should be a h2, as it is a direct descendant of the h1. This is an issue because screen reader users can pull all of the headings out into one summary list, as a quick way of skim reading through what is on the page. If the ordering is incorrect like this, it can be hard to interpret in when viewed in this way.
 
+- Justified text
+Justified text forces words and letters to space out a little more than they normally would, which in turn distorts the overal sentence shape a little. Some people with dyslexia rely on this shape, and so justifying and centering content like this can make it harder to read. The fix would be removing the styling that makes it justify, and allowing it to flow normally.
+
 ## End date
 - Use of capital letters
 Text that is in all capital letters loses it's shape. This can make it harder for some people with dyslexia to read. Unless absolutey necessary (like it is in a reference number), it's best to avoid using all caps.
