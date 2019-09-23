@@ -34,3 +34,20 @@ $govuk-canvas-background-colour: $govuk-body-background-colour;
   box-shadow: unset;
   text-decoration: unset;
 }
+
+.custom-list {
+  display: flex; 
+  flex-direction: column;
+}
+
+.custom-list--one {
+  order: 1;
+}
+
+.custom-list--two {
+  order: 2;
+}
+
+.custom-list--three {
+  order: 3;
+}
