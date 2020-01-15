@@ -1,7 +1,7 @@
 # Accessibility issues worksheet for 'Recording a goose sighting'
 Make a copy of this locally (either in a Word Doc, Google Doc, on paper, or on your laptop’s notepad), and use it as a worksheet for recording issues you find in this service.
 
-URL: https://recording-a-goose-sighting.herokuapp.com/ 
+URL: https://record-a-goose-sighting.herokuapp.com/ 
 
 ## What testing tools to use
 I would recommend working through the site in the following order:
