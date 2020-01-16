@@ -25,7 +25,8 @@ This is built using the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herok
 
 To run it locally, clone it down, run `npm install` and then `npm start`. It'll then tell you a port to go to in the browser.
 
-Alternatviely run it via docker & docker-compose
+#### Alternatviely run it via docker & docker-compose
+Depends on [docker install](https://docs.docker.com/install/) and [docker-compose install](https://docs.docker.com/compose/install/)
 1. `docker-compose build`
 2. `docker-compose up`
 
