@@ -25,7 +25,7 @@ Visually, this is coded to look like a button, but it's actually a link. Links c
 
 ### Do you like geese page
 - No legend on the radio button
-We can visually tell the link by looking at the page. But, the question isn't linked up to the element in a way that makes sense for users who can't see. For radio buttons and checkboxes, it's important to have a `<legend>` element. The fix would be making sure the 'h1' is inside the 'legend', as per the Design System pattern. 
+We can visually tell the link by looking at the page. But, the question isn't linked up to the element in a way that makes sense for users who can't see. For radio buttons and checkboxes, it's important to have a `<legend>` element. The fix would be making sure the 'h1' is inside the 'legend', as per the Design System pattern.
 
 - Continue button isn’t keyboard focusable
 You can still get past this page by pressing enter when on the radio buttons, but a user might not know this. They might (understandably) expect that the only way to progress is by submitting enter, and so feel trapped and abandon the service at this point. The fix would be removing the `tabindex="-1"`.
@@ -35,7 +35,7 @@ The colour contrast is way too low for the form hint text. In the Design System,
 
 ### What type of goose did you see
 - Wrong page title
-Some screen readers (like JAWS) read the page title out when a page loads. On this page, the page title is 'boop', which tells the screen reader user nothing about what's on the page. A better format would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'What type of goose did you see - Recording a goose sighting - GOV.UK', if it were on GOV.UK. 
+Some screen readers (like JAWS) read the page title out when a page loads. On this page, the page title is 'boop', which tells the screen reader user nothing about what's on the page. A better format would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'What type of goose did you see - Recording a goose sighting - GOV.UK', if it were on GOV.UK.
 
 - Visually hidden item you can tab onto
 There is some hidden text on the page, that is tab focusable. Whilst this isn't a particularly realistic example of this issue, sometimes inputs can get hidden of screen. It can be confusing for keyboard users who are tabbing through the screen, because the focus disappears, and you end up not being entirely sure where or when it's going to reappear, or what would happen if you tried to select the element you were on. If something has focus, it's best that it becomes visible, at least for the duration of it having focus.
@@ -51,17 +51,18 @@ Placeholder text disappears when you start to type. This can be confusing, and i
 
 ### Check your answers
 - Change link - hidden text is incorrect
-We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here. A sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put in the visually hidden text, instead of proper text. 
+We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here. A sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put in the visually hidden text, instead of proper text.
 
 - Incorrect heading level hierarchy
 The heading hierarchy is currently h1 > h3. The 'goose details' heading should be a h2, as it is a direct descendant of the h1. This is an issue because screen reader users can pull all of the headings out into one summary list, as a quick way of skim reading through what is on the page. If the ordering is incorrect like this, it can be hard to interpret when viewed in this way.
 
-- Justified text
-Justified text forces words and letters to space out a little more than they normally would, which in turn distorts the overal sentence shape a little. The shape is beneficial for some people with dyslexia though, and so justifying and centering content like this can make it harder to read. The fix would be removing the styling that makes it justify, and allowing it to flow normally.
 
 ### End date
 - Use of capital letters
 Text that is in all capital letters loses its shape. This can make it harder for some people with dyslexia to read. Unless absolutely necessary (like it is in a reference number), it's best to avoid writing words entirely in capital letters.
+
+- Justified text
+Justified text forces words and letters to space out a little more than they normally would, which in turn distorts the overal sentence shape a little. The shape is beneficial for some people with dyslexia though, and so justifying and centering content like this can make it harder to read. The fix would be removing the styling that makes it justify, and allowing it to flow normally.
 
 - No alt text on the gif
 This gif shows a happy goose celebrating knowledge about geese being shared with the world. This information isn't captured in any other medium like text on the page though, so descriptive alt text needs to be added here. There is a handy [alt decision tree by W3C](https://www.w3.org/WAI/tutorials/images/decision-tree/) on how to decide how to write alt text, which is worth a look at.
