@@ -1,7 +1,6 @@
 {% extends "layout_unbranded.html" %}
 
-{% block pageTitle %}
-{% endblock %}
+{% block pageTitle %}{% endblock %}
 
 {% block content %}
 
@@ -12,7 +11,7 @@
     </h1>
 
     <form class="form" action="/steps/goose-type" method="post">
-    
+
       {{ govukRadios({
         classes: "govuk-radios--inline",
         idPrefix: "geese-liked",
@@ -39,9 +38,9 @@
           }
         ]
       }) }}
-    
+
       <button class="govuk-button" tabindex="-1">Continue</button>
-    
+
     </form>
 
   </div>
