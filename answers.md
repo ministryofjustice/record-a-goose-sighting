@@ -67,6 +67,9 @@ Justified text forces words and letters to space out a little more than they nor
 - No alt text on the gif
 This gif shows a happy goose celebrating knowledge about geese being shared with the world. This information isn't captured in any other medium like text on the page though, so descriptive alt text needs to be added here. There is a handy [alt decision tree by W3C](https://www.w3.org/WAI/tutorials/images/decision-tree/) on how to decide how to write alt text, which is worth a look at.
 
+- Animation cannot be stopped.
+Moving content such as the happy goose can be a severe distraction for people with conditions such as attention deficit disorders, making it difficult to use the rest of the page. It should run no longer than 5 seconds or be able to be paused or hidden by the users.
+
 - Removed transparent border
 When unaltered, the big box at the top has a colour behind it, that gives it visual prominence on the page. If we turn on our dark mode plugin, it loses this. This is because it's been tampered with a little - if you go to this Summary pattern page in the Design System with the dark mode plugin turned on, you'll see a border appears around it. This is because of a transparent border around it. This was used incorrectly earlier, to try to hide the 'ghost goose', but used to positive effect here. Just one example of the many ways in which the Design System is awesome!
 
