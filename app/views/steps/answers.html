@@ -1,0 +1,83 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Check your answers - Record a goose sighting
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+    
+    <h3 class="govuk-heading-m">Goose details</h3>
+    
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          You like geese
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['geese-liked'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/geese-liked" class="govuk-link">
+            Change
+            <span class="govuk-visually-hidden"> biscuits</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Type of goose that you saw
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['goose-type'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/goose-type" class="govuk-link">
+            Change
+            <span class="govuk-visually-hidden"> cake</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date you saw the goose
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data['date-saw-goose-day'] }} / {{ data['date-saw-goose-month'] }} / {{ data['date-saw-goose-year'] }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a href="/steps/date-saw-goose" class="govuk-link">
+            Change
+            <span class="govuk-visually-hidden"> the date you saw the goose</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+    
+
+    <h2 class="govuk-heading-m">Now send your application</h2>
+    
+    <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing
+      are correct.</p>
+
+      {% from "govuk/components/details/macro.njk" import govukDetails %}
+
+      {{ govukDetails({
+        summaryText: "What happens with my data?",
+        text: "Nothing - this doesn't actually do or collect anything. You'll have to store your own goose records unfortunately."
+      }) }}
+    
+    <form class="form" action="/steps/end" method="post">
+    
+      <button class="govuk-button">Continue</button>
+    
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}
