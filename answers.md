@@ -25,9 +25,6 @@ Screen reader users can view links out of context through a links menu. This can
 
 If the focus state style doesn't have a high enough contrast and it can be really hard to tell where focus is. This particularly effects people who have a sight impairement. In this instance, this issue can be fixed by adding the appropriate Design System link class.
 
-- `Role=“button”` missing on link to next page
-
-Visually, this is coded to look like a button, but it's actually a link. Links can only be selected by pressing enter, but buttons can be selected by pressing space bar too. This can be told visually, from it's appearance, and giving it a `role="button"` would let screen reader users know this too. This has come about from the Design System not being implemented properly, as the Design System markup contains this. This is a relatively minor issue, but it is best practise to add in appropriate ARIA if you're doing things like this.
 
 ### Do you like geese page
 - No legend on the radio button
@@ -40,7 +37,8 @@ You can still get past this page by pressing enter when on the radio buttons, bu
 
 - Insufficient colour contrast of the form hint
 
-  The colour contrast is way too low for the form hint text. In the Design System, it's a darker grey, which does have a sufficient colour contrast ratio. Respecting the out-of-the-box colours and not overriding them here would fix this issue.
+The colour contrast is way too low for the form hint text. In the Design System, it's a darker grey, which does have a sufficient colour contrast ratio. Respecting the out-of-the-box colours and not overriding them here would fix this issue.
+
 
 ### What type of goose did you see
 - Wrong page title
@@ -63,12 +61,12 @@ Placeholder text disappears when you start to type. This can be confusing, and i
 ### When did you see the goose
 - No issues on this page!
 
-  Sometimes, when you've found issues on other pages, you expect every page to have issues, and you spend a long time looking. However sometimes, some pages don't have issues, and if the basic tests pass, the best use of time is to move on.
+Sometimes, when you've found issues on other pages, you expect every page to have issues, and you spend a long time looking. However sometimes, some pages don't have issues, and if the basic tests pass, the best use of time is to move on.
 
 ### Check your answers
 - Change link - hidden text is incorrect
 
-  We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here. A sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put in the visually hidden text, instead of proper text.
+We talked earlier about links needing to make sense out of context. In this component from the Design System, given the change link is just across from the question, it would look weird to have that visually included in the link. But, we can visually hide text - and that's what is normally done here. A sighted user would see 'change', but a screen reader user would hear 'change what type of goose did you see'. However, it's been configured incorrectly here - and random food items have been put in the visually hidden text, instead of proper text.
 
 - Incorrect heading level hierarchy
 
@@ -78,7 +76,7 @@ The heading hierarchy is currently h1 > h3. The 'goose details' heading should b
 ### End date
 - Use of capital letters
 
-  Text that is in all capital letters loses its shape. This can make it harder for some people with dyslexia to read. Unless absolutely necessary (like it is in a reference number), it's best to avoid writing words entirely in capital letters.
+Text that is in all capital letters loses its shape. This can make it harder for some people with dyslexia to read. Unless absolutely necessary (like it is in a reference number), it's best to avoid writing words entirely in capital letters.
 
 - Justified text
 
@@ -91,11 +89,11 @@ This gif shows a happy goose celebrating knowledge about geese being shared with
 
 - Animation cannot be stopped.
 
-  Moving content such as the happy goose can be a severe distraction for people with conditions such as attention deficit disorders, making it difficult to use the rest of the page. It should run no longer than 5 seconds or be able to be paused or hidden by the users.
+Moving content such as the happy goose can be a severe distraction for people with conditions such as attention deficit disorders, making it difficult to use the rest of the page. It should run no longer than 5 seconds or be able to be paused or hidden by the users.
 
 - Removed transparent border
 
-  When unaltered, the big box at the top has a colour behind it, that gives it visual prominence on the page. If we turn on our dark mode plugin, it loses this. This is because it's been tampered with a little - if you go to this Summary pattern page in the Design System with the dark mode plugin turned on, you'll see a border appears around it. This is because of a transparent border around it. This was used incorrectly earlier, to try to hide the 'ghost goose', but used to positive effect here. Just one example of the many ways in which the Design System is awesome!
+When unaltered, the big box at the top has a colour behind it, that gives it visual prominence on the page. If we turn on our dark mode plugin, it loses this. This is because it's been tampered with a little - if you go to this Summary pattern page in the Design System with the dark mode plugin turned on, you'll see a border appears around it. This is because of a transparent border around it. This was used incorrectly earlier, to try to hide the 'ghost goose', but used to positive effect here. Just one example of the many ways in which the Design System is awesome!
 
 
 ## Want to learn more about Accessibility?
