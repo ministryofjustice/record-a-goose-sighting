@@ -25,4 +25,8 @@ router.get('steps/worksheet', function (req, res) {
   res.render('steps/worksheet');
 });
 
+router.get('steps/answers', function (req, res) {
+  res.render('steps/answers');
+});
+
 module.exports = router
