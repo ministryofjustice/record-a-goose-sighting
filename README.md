@@ -6,7 +6,7 @@ There are places where the Design System is misused, misimplemented or misunders
 ## How to use this
 The task is to find as many of the accessibility issues in this site as you can in ~20 minutes.
 
-There is a [worksheet](/worksheet.md), and there is also a list of [answers](answers.md) - but give it the full 20 minutes before you look at the answers first, if you're working through this alone!
+There is a [worksheet](https://record-a-goose-sighting.herokuapp.com/steps/worksheet), and there is also a list of [answers](https://record-a-goose-sighting.herokuapp.com/steps/answers) - but give it the full 20 minutes before you look at the answers first, if you're working through this alone!
 
 ## What testing tools to use
 I would recommend working through the site in the following order:
