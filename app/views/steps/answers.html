@@ -9,16 +9,16 @@ Answers - Record a goose sighting
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <a class="govuk-back-link" href="/steps/end">Back</a>
-    
+
     <h1 class="govuk-heading-xl">Accessibility issues in 'Record a goose sighting'</h1>
-    
-  
+
+
     <p>Here is the answer sheet for the 'Record a goose sighting' accessibility testing exercise. There are 19 issues in total.</p>
 
     <p>Some of these issues would not be WCAG (Web Content Accessibility Guidelines) 2.1 failures. But, they could present issues to users with access needs, and WCAG compliance doesn't neccessarily mean that something is accessible.</p>
 
     <h2 class="govuk-heading-m">Pages</h2>
-    
+
     <h3 class="govuk-heading-s">Start page</h3>
 
     <dl class="govuk-body">
@@ -60,10 +60,7 @@ Answers - Record a goose sighting
       <dd>Some screen readers (like JAWS) read the page title out when a page loads. On this page, the page title is 'Boop - Record a goose sighting', which tells the screen reader user nothing about what's on the page. A better format would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'What type of goose did you see - Recording a goose sighting - GOV.UK', if it were on GOV.UK.</dd>
 
       <dt class="govuk-!-font-weight-bold">Visually hidden item you can tab onto</dt>
-      <dd>There is some hidden text on the page, that can be tabbed to. Whilst this isn't a particularly realistic example of this issue, sometimes inputs can get hidden off screen. It can be confusing for keyboard users who are tabbing through the screen, because the focus disappears, and you end up not being entirely sure where or when it's going to reappear, or what would happen if you tried to select the element you were on. If something has focus, it's best that it becomes visible, at least for the duration of it having focus. In many cases think whether there is value for other users by having the content visible at all times.</dd>
-
-      <dt class="govuk-!-font-weight-bold">Transparent text that appears in dark mode</dt>
-      <dd>An attempt was made to hide the text 'ghost goose' on the page - but because color: transparent was used, it isn't properly hidden, and leaks out in dark mode and Windows high contrast mode. The proper fix would be using the 'govuk-visually-hidden' class. This isn't a WCAG 2.1 failure.</dd>
+      <dd>There is a ghost goose hidden on the page! There is some hidden text on the page, that can be tabbed to. Whilst this isn't a particularly realistic example of this issue, sometimes inputs can get hidden off screen. It can be confusing for keyboard users who are tabbing through the screen, because the focus disappears, and you end up not being entirely sure where or when it's going to reappear, or what would happen if you tried to select the element you were on. If something has focus, it's best that it becomes visible, at least for the duration of it having focus. In many cases think whether there is value for other users by having the content visible at all times.</dd>
 
       <dt class="govuk-!-font-weight-bold">Placeholder text</dt>
       <dd>Placeholder text disappears when you start to type. This can be confusing, and if you struggle to remember things, you might then need to delete what you've typed in to remind yourself of what was there, in case it was important. It's best to include information like hints outside of the form field, where it can be seen at all times. This is essential if the placeholder text includes important formatting information.</dd>
@@ -106,7 +103,7 @@ Answers - Record a goose sighting
     </dl>
 
   <h2 class="govuk-heading-m">Want to learn more about Accessibility?</h2>
-  
+
   <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction#further-reading">GOV.UK resources about accessibility</a></li>
     <li><a href="https://www.udacity.com/course/web-accessibility--ud891">Udacity course on Accessibility</a></li>
