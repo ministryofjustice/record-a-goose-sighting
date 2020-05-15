@@ -2,87 +2,37 @@
 {% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Start page - Record a goose sighting
+  Instructions - Record a goose sighting
   {% endblock %}
-  
-  
-  {% block beforeContent %}
-  <div class="app-banner app-banner--warning" data-module="app-banner">
-    <div class="govuk-width-container">
-      <p class="govuk-heading-m">
-        This is not a real government service, and is for training purposes only.</p>
-        <p> You'll have to create your own way of registering geese, sorry.</p>
-      </p>
-    </div>
-  </div>
-  
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/environment-countryside">Environment and Countryside</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/environment-countryside/wildlife-biodiversity">Wildlife and Biodiversity</a>
-      </li>
-    </ol>
-  </div>
-{% endblock %}
 
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        {% if serviceName %} {{ serviceName }} {% endif %}
+        'Record a goose sighting' accessibility exercise instructions
       </h1>
 
-      <p>Use this service to:</p>
+      <p>'Record a goose sighting' is a made-up government service, filled with accessibility issues. Your task is to find them all! If you'd like to know more about the background, visit the blog post about this, <a href="https://accessibility.blog.gov.uk/2020/01/14/training-people-to-do-accessibility-reviews/">'Training people to do accessibility reviews'.</a></p>
+
+      <p>To identify the issues, you'll want to use keyboard testing, and WAVE. More details are in a <a class="govuk-link" href="/steps/worksheet">worksheet you'll need to accompany this exercise.</a>
+        <p></p>
+
+      <p>There are 6 pages in total:</p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>tell us if you like geese</li>
-        <li>tell us what type of goose you saw</li>
-        <li>the date on which you saw the goose</li>
+        <li>Start page</li>
+        <li>Do you like geese?</li>
+        <li>What type of goose did you see?</li>
+        <li>When did you see the goose?</li>
+        <li>Check your answers</li>
+        <li>Confirmation page</li>
       </ul>
-      
-      <p><a class="govuk-link" href="/steps/worksheet">Worksheet to accompany this accessibility exercise.</a><p>
 
-      <p>The first accessibility issues of the exercise are on this page...</p>
-      
-      <a href="/steps/geese-liked" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
+      <p>Accessibility issues start on the next page. Good luck!</p>
 
-    </div>
-
-    <div class="govuk-grid-column-one-third">
-
-      <aside class="app-related-items" role="complementary">
-        <h1 class="govuk-heading-m" id="subsection-title">
-          Information about Geese
-        </h1>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="custom-list govuk-list govuk-!-font-size-16">
-            <li class="custom-list--one">
-              <a href="https://en.wikipedia.org/wiki/Goose" class="link">
-                Read about geese on Wikipedia
-              </a>
-            </li>
-            <li class="custom-list--three">
-              <a href="https://www.wildlondon.org.uk/" class="govuk-!-font-weight-bold link">
-                More
-              </a>
-            </li>
-            <li class="custom-list--two">
-              <a href="https://www.rspb.org.uk/" target="_blank" class="link">
-                Visit the RSPB website
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <a href="/steps/start" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Continue</a>
 
     </div>
   </div>
 {% endblock %}
-

@@ -1,6 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
+router.get('steps/start', function (req, res) {
+  res.render('steps/start');
+});
+
 router.get('steps/geese-liked', function (req, res) {
   res.render('steps/geese-liked');
 });
