@@ -1,0 +1,85 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+Start page - Record a goose sighting
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="app-banner app-banner--warning" data-module="app-banner">
+  <div class="govuk-width-container">
+    <p class="govuk-heading-m">
+      This is not a real government service, and is for training purposes only.</p>
+    <p> You'll have to create your own way of registering geese, sorry.</p>
+    </p>
+  </div>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/environment-countryside">Environment and
+        Countryside</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link"
+        href="https://www.gov.uk/browse/environment-countryside/wildlife-biodiversity">Wildlife and Biodiversity</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      {% if serviceName %} {{ serviceName }} {% endif %}
+    </h1>
+
+    <p>Use this service to:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>tell us if you like geese</li>
+      <li>tell us what type of goose you saw</li>
+      <li>the date on which you saw the goose</li>
+    </ul>
+
+    <a href="/steps/geese-liked" role="button"
+      class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <aside class="app-related-items" role="complementary">
+      <h1 class="govuk-heading-m" id="subsection-title">
+        Information about Geese
+      </h1>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="custom-list govuk-list govuk-!-font-size-16">
+          <li class="custom-list--one">
+            <a href="https://en.wikipedia.org/wiki/Goose" class="link">
+              Read about geese on Wikipedia
+            </a>
+          </li>
+          <li class="custom-list--three">
+            <a href="https://www.wildlondon.org.uk/" class="govuk-!-font-weight-bold link">
+              More
+            </a>
+          </li>
+          <li class="custom-list--two">
+            <a href="https://www.rspb.org.uk/" target="_blank" class="link">
+              Visit the RSPB website
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+{% endblock %}
