@@ -46,7 +46,7 @@ Answers - Record a goose sighting
       <dd>Some screen readers (like JAWS) read the page title out when a page loads. On this page, there is no title, which means a screen reader user is missing context. An example of a possible page title would be the page question, followed by the service name, and followed by whatever it's hosted on - so 'Do you like geese - Recording a goose sighting - GOV.UK', if it were on GOV.UK.</dd>
 
       <dt class="govuk-!-font-weight-bold">No legend on the radio button</dt>
-      <dd>We can visually tell that the buttons relate to the main heading by looking at the page. But, the question isn't linked up to the element in a way that makes sense for users who can't see. For radio buttons and checkboxes, it's important to have a <legend> element. The fix would be making sure the 'h1' is inside the 'legend', as per the Design System pattern.</dd>
+      <dd>We can visually tell that the buttons relate to the main heading by looking at the page. But, the question isn't linked up to the element in a way that makes sense for users who can't see. For radio buttons and checkboxes, it's important to have a legend element. The fix would be making sure the 'h1' is inside the 'legend', as per the Design System pattern.</dd>
 
       <dt class="govuk-!-font-weight-bold">Continue button isn’t keyboard focusable</dt>
       <dd>You can still get past this page by pressing enter when on the radio buttons, but a user might not know this. They might (understandably) expect that the only way to progress is by submitting enter, and so feel trapped and abandon the service at this point. All interactive elements must be usabled with the keyboard. The fix would be removing the tabindex="-1".</dd>
