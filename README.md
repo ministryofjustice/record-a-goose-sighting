@@ -45,3 +45,9 @@ Feedback is welcome. Either [submit an issue](https://github.com/ministryofjusti
 - [a11y weekly](https://a11yweekly.com/) - a good weekly newsletter about accessibility
 
 Any other suggestions, free free to add them!
+
+## Other versions of the exercise
+Since publishing this, a few other organisations have forked it and made their own versions using their own Design Systems. A list of these is below - if you've made one, let me know by raising an issue and I'll add it.
+
+- [NHS Accessibility exercise](https://github.com/nhsuk/accessibility-training)
+- [Coop accessibility exercise - 'Report a leaky bag of flour'](https://github.com/coopdigital/return-a-leaky-bag-of-flour)
