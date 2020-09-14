@@ -1,4 +1,7 @@
 # Record a goose sighting
+
+[Go to the 'Record a goose sighting' exercise](https://record-a-goose-sighting.herokuapp.com/)
+
 This is a fictional service, to help you record any sightings of geese (geese are awesome). It's using the [GOV.UK Design system](https://design-system.service.gov.uk/), which are WCAG 2.1 AA compliant, and benefits from hundreds of hours of work and testing. However, even if you're using a Design System, stuff can still go wrong...
 
 There are places where the Design System is misused, misimplemented or misunderstood. This has caused accessibility issues, which range across code, design and content - because accessibility issues can be introduced by all of these disciplines. As such, anyone is welcome to have a go and use this as an exercise!
