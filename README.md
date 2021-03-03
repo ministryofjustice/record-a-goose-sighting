@@ -11,6 +11,8 @@ The task is to find as many of the accessibility issues in this site as you can 
 
 There is a [worksheet](https://record-a-goose-sighting.herokuapp.com/steps/worksheet), and there is also a list of [answers](https://record-a-goose-sighting.herokuapp.com/steps/answers) - but give it the full 20 minutes before you look at the answers first, if you're working through this alone!
 
+If you are running this as a training exercise, there is an [answerless 'Record a goose sighting' exercise](https://record-a-goose-exercise.herokuapp.com), that you can use with attendees. This prevents them from finding answers before you're ready to go through them!
+
 ## What testing tools to use
 I would recommend working through the site in the following order:
 
