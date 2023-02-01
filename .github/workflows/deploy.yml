@@ -31,8 +31,8 @@ jobs:
           region: eu-west-2
           local-image: foo
           image: ${ECR_NAME}:${{ github.sha }}
-      - name: Update image tag
-        run: export IMAGE_TAG=${{ github.sha }} && cat kubernetes-deploy.tpl | envsubst > kubernetes-deploy.yaml
+      - name: Update image tag and branch name
+        run: export IMAGE_TAG=${{ github.sha }} && export BRANCH=${GITHUB_REF##*/} && cat kubernetes-deploy.tpl | envsubst > kubernetes-deploy.yaml
       - name: Authenticate to the cluster
         env:
           KUBE_CERT: ${{ secrets.KUBE_CERT }}
