@@ -9,4 +9,6 @@ RUN npm install .
 
 COPY . /node_app
 
-CMD ["node","start.js"]
+RUN node ./node_modules/gulp/bin/gulp generate-assets
+
+CMD ["node","listen-on-port.js"]
