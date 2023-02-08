@@ -1,21 +1,24 @@
-FROM node:10
+FROM node:16.14-bullseye-slim
 
 ENV NODE_ENV=production
 
 RUN addgroup --gid 1017 --system appgroup \
   && adduser --uid 1017 --system appuser --gid 1017
 
-WORKDIR /node_app
+WORKDIR /app
 
-COPY package.json /node_app/
-RUN npm install .
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y make python3
 
-COPY . /node_app
+COPY . .
 
-RUN chown -R appuser:appgroup /node_app
+RUN npm install
+
+RUN chown -R appuser:appgroup /app
 
 USER 1017
 
-RUN node ./node_modules/gulp/bin/gulp generate-assets
+RUN chmod +x start.sh
 
-CMD ["node", "listen-on-port.js"]
+CMD ["./start.sh"]

@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'fix-dockerfile'
 
 env:
   ECR_NAME: ${{ secrets.ECR_NAME }}
