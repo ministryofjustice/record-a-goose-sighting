@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'fix-deploy-file'
 
 env:
   ECR_NAME: ${{ secrets.ECR_NAME }}
