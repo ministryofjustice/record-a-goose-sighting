@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'master'
 
 env:
   ECR_NAME: ${{ secrets.ECR_NAME }}
