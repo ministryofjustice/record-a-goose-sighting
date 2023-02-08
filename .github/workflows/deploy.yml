@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 env:
   ECR_NAME: ${{ secrets.ECR_NAME }}
@@ -15,7 +15,7 @@ env:
   KUBE_NAMESPACE: ${{ secrets.KUBE_NAMESPACE }}
 
 jobs:
-  master:
+  main:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
